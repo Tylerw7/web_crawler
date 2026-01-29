@@ -1,9 +1,13 @@
-﻿using HtmlAgilityPack;
-using DotNetEnv;
-
-Env.Load();
+﻿using ConsoleApp1.Crawler;
 
 
-var web = new HtmlWeb();
-var document = web.Load("https://cabinetrybywettach.com");
-Console.WriteLine("Page loaded!");
+class Program
+{
+    static async Task Main()
+    {
+        var crawler = new WebCrawlerEngine(
+            "https://cabinetrybywettach.com",
+            100
+        );
+    }
+}
