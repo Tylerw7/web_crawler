@@ -27,6 +27,8 @@ public class WebCrawlerEngine
         var workers = Enumerable.Range(0, 10)
             .Select(_ => Task.Run(WorkerAsync))
             .ToArray();
+
+        await Task.WhenAll(workers);
     }
 
     private async Task WorkerAsync()

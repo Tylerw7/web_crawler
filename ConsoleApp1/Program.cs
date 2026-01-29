@@ -1,13 +1,12 @@
 ﻿using ConsoleApp1.Crawler;
 
+using DotNetEnv;
 
-class Program
-{
-    static async Task Main()
-    {
-        var crawler = new WebCrawlerEngine(
-            "https://cabinetrybywettach.com",
-            100
-        );
-    }
-}
+Env.Load();
+
+var crawler = new WebCrawlerEngine(
+    "https://www.langchain.com/",
+    100
+);
+
+await crawler.StartAsync();

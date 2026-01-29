@@ -43,28 +43,6 @@
           }
         }
       },
-      "HtmlAgilityPack.CssSelectors/1.0.2": {
-        "type": "package",
-        "dependencies": {
-          "HtmlAgilityPack": "1.4.9"
-        },
-        "compile": {
-          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
-            "related": ".pdb"
-          },
-          "lib/net45/HtmlAgilityPack.dll": {
-            "related": ".CssSelectors.pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {
-            "related": ".pdb"
-          },
-          "lib/net45/HtmlAgilityPack.dll": {
-            "related": ".CssSelectors.pdb;.xml"
-          }
-        }
-      },
       "Microsoft.Extensions.Configuration/1.1.2": {
         "type": "package",
         "dependencies": {
@@ -307,21 +285,6 @@
         "readme.md"
       ]
     },
-    "HtmlAgilityPack.CssSelectors/1.0.2": {
-      "sha512": "bB4FeVvcNROENPWQfFSmPQ6q99jGk8ru5QoBB3qnEeaP451fjnqQ0uPuMgmWHAOZIXUAoOQozv/5fEEVSDyIzA==",
-      "type": "package",
-      "path": "htmlagilitypack.cssselectors/1.0.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "htmlagilitypack.cssselectors.1.0.2.nupkg.sha512",
-        "htmlagilitypack.cssselectors.nuspec",
-        "lib/net45/HtmlAgilityPack.CssSelectors.dll",
-        "lib/net45/HtmlAgilityPack.CssSelectors.pdb",
-        "lib/net45/HtmlAgilityPack.dll",
-        "lib/net45/HtmlAgilityPack.xml"
-      ]
-    },
     "Microsoft.Extensions.Configuration/1.1.2": {
       "sha512": "eK5BHx/pHLGGO/WDo7CS070MGgx3N7B/ORO/oKeS0qgCyv+ZAR47YWKXmG5aF+lIrAJd3uJjMTdTKgXTU2UDWw==",
       "type": "package",
@@ -524,7 +487,6 @@
     "net10.0": [
       "DotNetEnv >= 3.1.1",
       "HtmlAgilityPack >= 1.12.4",
-      "HtmlAgilityPack.CssSelectors >= 1.0.2",
       "MongoDB.Driver >= 3.6.0"
     ]
   },
@@ -578,10 +540,6 @@
           "HtmlAgilityPack": {
             "target": "Package",
             "version": "[1.12.4, )"
-          },
-          "HtmlAgilityPack.CssSelectors": {
-            "target": "Package",
-            "version": "[1.0.2, )"
           },
           "MongoDB.Driver": {
             "target": "Package",
@@ -881,17 +839,5 @@
         }
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'HtmlAgilityPack.CssSelectors 1.0.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net10.0'. This package may not be fully compatible with your project.",
-      "libraryId": "HtmlAgilityPack.CssSelectors",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    }
-  ]
+  }
 }

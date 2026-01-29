@@ -2,6 +2,8 @@
 
 namespace ConsoleApp1.data;
 
+
+
 public record Webpage
 {
     public string Url { get; set; }
